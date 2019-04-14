@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Lost Packets - Joseph Anthony C. Hermocilla</title><link href="https://srg-ics-uplb.github.io/blog/" rel="alternate"></link><link href="https://srg-ics-uplb.github.io/blog/feeds/joseph-anthony-c-hermocilla.atom.xml" rel="self"></link><id>https://srg-ics-uplb.github.io/blog/</id><updated>2019-03-06T00:00:00+08:00</updated><entry><title>How to contribute to this blog (Short Method)</title><link href="https://srg-ics-uplb.github.io/blog/how-to-contribute-to-this-blog-short-method.html" rel="alternate"></link><published>2019-02-02T00:00:00+08:00</published><updated>2019-03-06T00:00:00+08:00</updated><author><name>Joseph Anthony C. Hermocilla</name></author><id>tag:srg-ics-uplb.github.io,2019-02-02:/blog/how-to-contribute-to-this-blog-short-method.html</id><summary type="html">&lt;p&gt;This method is easier because the editing will be done in
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Lost Packets - Joseph Anthony C. Hermocilla</title><link href="https://srg-ics-uplb.github.io/blog/" rel="alternate"></link><link href="https://srg-ics-uplb.github.io/blog/feeds/joseph-anthony-c-hermocilla.atom.xml" rel="self"></link><id>https://srg-ics-uplb.github.io/blog/</id><updated>2019-04-14T00:00:00+08:00</updated><entry><title>Lock–Unlock: Is That All? A Pragmatic Analysis of Locking in Software Systems</title><link href="https://srg-ics-uplb.github.io/blog/lock-unlock-is-that-all-a-pragmatic-analysis-of-locking-in-software-systems.html" rel="alternate"></link><published>2019-04-14T00:00:00+08:00</published><updated>2019-04-14T00:00:00+08:00</updated><author><name>Joseph Anthony C. Hermocilla</name></author><id>tag:srg-ics-uplb.github.io,2019-04-14:/blog/lock-unlock-is-that-all-a-pragmatic-analysis-of-locking-in-software-systems.html</id><summary type="html">&lt;p&gt;Most processors nowadays are multi-core processors to take advantage of parallel processing.
+Associated with parallel processing is the synchronization problem wherin locks are extensively
+used. This paper &lt;a class="citation-reference" href="#guerraoui2019" id="id1"&gt;[GUERRAOUI2019]&lt;/a&gt; argues that despite the large amount of available choices for
+lock algorithms, developers do not have a comprehensive guide to select an …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Most processors nowadays are multi-core processors to take advantage of parallel processing.
+Associated with parallel processing is the synchronization problem wherin locks are extensively
+used. This paper &lt;a class="citation-reference" href="#guerraoui2019" id="id1"&gt;[GUERRAOUI2019]&lt;/a&gt; argues that despite the large amount of available choices for
+lock algorithms, developers do not have a comprehensive guide to select an algorithm. The paper also
+asserts that most research on lock algorithms are limited to mutex locks and rarely consider other
+techniques like trylocks and condition variables. In addition, most evaluation of lock algorithms
+use workload that are specific to the design of the lock. Lastly, evaluation is focused only on throughput
+neglecting energy efficiency and tail latency.&lt;/p&gt;
+&lt;p&gt;The main contribution of this paper is a broad performance study of lock algorithms. Specifically,
+28 state-of-the-art algorithms were studied and applied to 40 applications. The experiments where
+conducted of 4 different multi-core machines. As mentioned, this study considered energy efficiency and
+tail latency, in addition to throughtput, as metrics in the evaluation. In the paper, the authors
+claimed that it is really difficult to choose a well-performing lock for an application because of
+several factors: workload, hardware, degree of parallelism, number of locks, how they are used, interaction
+between the application and the CPU scheduler, and metric. The authors also developed a library called LiTL
+used for testing the applications.&lt;/p&gt;
+&lt;p&gt;The authors have the following observations as a result of their study&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Trylocks and condition variables should also be considered&lt;/li&gt;
+&lt;li&gt;Memory footprint of lock algorithms affect performance&lt;/li&gt;
+&lt;li&gt;Interaction between locks and scheduling affects performance&lt;/li&gt;
+&lt;li&gt;Lock tail latency may not affect application tail latency&lt;/li&gt;
+&lt;li&gt;No single lock is systematically the best&lt;/li&gt;
+&lt;li&gt;Choosing the best lock is difficult&lt;/li&gt;
+&lt;li&gt;Energy efficiency and throughput go hand-in-hand in lock algorithms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;The figure below is a guide for developers in selecting the appropriate lock considering
+the findings of the the study.&lt;/p&gt;
+&lt;img alt="" src="./images/jach/locks.png" style="width: 40%;" /&gt;
+&lt;table class="docutils citation" frame="void" id="guerraoui2019" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[GUERRAOUI2019]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;Guerraoui, R., Guiroux, H., Lachaize, R., Quéma, V., &amp;amp; Trigonakis, V. (2019). Lock–Unlock: Is That All? A Pragmatic Analysis of Locking in Software Systems. ACM Transactions on Computer Systems, 36(1), 1–149. &lt;a class="reference external" href="https://doi.org/10.1145/3301501"&gt;https://doi.org/10.1145/3301501&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content></entry><entry><title>Contiki - a Lightweight and Flexible Operating System for Tiny Networked Sensors</title><link href="https://srg-ics-uplb.github.io/blog/contiki-a-lightweight-and-flexible-operating-system-for-tiny-networked-sensors.html" rel="alternate"></link><published>2019-03-23T00:00:00+08:00</published><updated>2019-03-23T00:00:00+08:00</updated><author><name>Joseph Anthony C. Hermocilla</name></author><id>tag:srg-ics-uplb.github.io,2019-03-23:/blog/contiki-a-lightweight-and-flexible-operating-system-for-tiny-networked-sensors.html</id><summary type="html">&lt;p&gt;This paper &lt;a class="citation-reference" href="#dunkels2005" id="id1"&gt;[DUNKELS2005]&lt;/a&gt; describes the design and implementation of Contiki. The paper describes the characteristics of sensor
+networks and its special requirements. These special requirements were considered in Contiki's design. For example,
+nodes in sensor networks are tiny and limited in processing power and memory. Thus, Contiki should be able …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This paper &lt;a class="citation-reference" href="#dunkels2005" id="id1"&gt;[DUNKELS2005]&lt;/a&gt; describes the design and implementation of Contiki. The paper describes the characteristics of sensor
+networks and its special requirements. These special requirements were considered in Contiki's design. For example,
+nodes in sensor networks are tiny and limited in processing power and memory. Thus, Contiki should be able to
+run on these devices. Contiki is an event-driven operating system which means that it responds when an event happens.
+The main components of Contiki are the kernel, libraries, program loader, and a set of processes.&lt;/p&gt;
+&lt;table class="docutils citation" frame="void" id="dunkels2005" rules="none"&gt;
+&lt;colgroup&gt;&lt;col class="label" /&gt;&lt;col /&gt;&lt;/colgroup&gt;
+&lt;tbody valign="top"&gt;
+&lt;tr&gt;&lt;td class="label"&gt;&lt;a class="fn-backref" href="#id1"&gt;[DUNKELS2005]&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;ol class="first last upperalpha simple"&gt;
+&lt;li&gt;Dunkels, B. Gronvall, and T. Voigt, “Contiki - a lightweight and flexible operating system for tiny networked sensors,” in 29th Annual IEEE International Conference on Local Computer Networks, 2004, pp. 455–462.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</content></entry><entry><title>How to contribute to this blog (Short Method)</title><link href="https://srg-ics-uplb.github.io/blog/how-to-contribute-to-this-blog-short-method.html" rel="alternate"></link><published>2019-02-02T00:00:00+08:00</published><updated>2019-03-06T00:00:00+08:00</updated><author><name>Joseph Anthony C. Hermocilla</name></author><id>tag:srg-ics-uplb.github.io,2019-02-02:/blog/how-to-contribute-to-this-blog-short-method.html</id><summary type="html">&lt;p&gt;This method is easier because the editing will be done in
 github itself via the web browser.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1. Fork the original repository&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a class="reference external" href="https://github.com/srg-ics-uplb/blog"&gt;SRG Blog Repository&lt;/a&gt;&lt;/p&gt;
