@@ -31,8 +31,8 @@ The following are the steps in the proposed methodology.&lt;/p&gt;
 - local communication
 - computation
 - storage&lt;/p&gt;
-&lt;p&gt;As for the benchmarking part, the researchers used bonnie++, lmbench, and sysbench.
-It is worth noting that this paper did not consider inter-VM communication. The
+&lt;p&gt;As for the benchmarking part, the researchers used bonnie++, lmbench, and sysbench.&lt;/p&gt;
+&lt;p&gt;It is worth noting that this paper did not consider inter-VM communication. The
 local communication is between the cores in the VM only. Perhaps a future work will
 be to consider inter-VM communication in the methodology.&lt;/p&gt;
 &lt;table class="docutils citation" frame="void" id="varghese2019" rules="none"&gt;
