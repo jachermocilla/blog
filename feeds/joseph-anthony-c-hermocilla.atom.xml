@@ -7,8 +7,8 @@ performance of their applications, especially if there are a lot of choices.
 For example, if I want to run computational chemistry app, I need to make a decision
 whether to use a VM with 1 VCPU and 2GB RAM or a VM with 2 VCPUs and 4GB RAM.&lt;/p&gt;
 &lt;p&gt;Cloud providers run benchmarks to measure the performance of various VM configurations for applications.
-However, these benchmarks are done independent of the application to be deployed. Most like because
-providers have no knowledge of what application will be deployed. ]&lt;/p&gt;
+However, these benchmarks are done independent of the application to be deployed. Most likely because
+providers have no knowledge of what application will be deployed.&lt;/p&gt;
 &lt;p&gt;This paper [&lt;a class="reference internal" href="#varghese2019"&gt;VARGHESE2019&lt;/a&gt;] addresses these issues by introducing an application-aware benchmarking
 methodology. The main hypothesis presented in the paper is that by taking into account application
 requirements in addition to benchmarking data, VMs can be ranked in order of performance and
@@ -42,10 +42,10 @@ be to consider inter-VM communication in the methodology.&lt;/p&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 </content></entry><entry><title>Lock–Unlock: Is That All? A Pragmatic Analysis of Locking in Software Systems</title><link href="https://srg-ics-uplb.github.io/blog/lock-unlock-is-that-all-a-pragmatic-analysis-of-locking-in-software-systems.html" rel="alternate"></link><published>2019-04-14T00:00:00+08:00</published><updated>2019-04-14T00:00:00+08:00</updated><author><name>Joseph Anthony C. Hermocilla</name></author><id>tag:srg-ics-uplb.github.io,2019-04-14:/blog/lock-unlock-is-that-all-a-pragmatic-analysis-of-locking-in-software-systems.html</id><summary type="html">&lt;p&gt;Most processors nowadays are multi-core processors to take advantage of parallel processing.
-Associated with parallel processing is the synchronization problem wherin locks are extensively
+Associated with parallel processing is the synchronization problem wherein locks are extensively
 used. This paper &lt;a class="citation-reference" href="#guerraoui2019" id="id1"&gt;[GUERRAOUI2019]&lt;/a&gt; argues that despite the large amount of available choices for
 lock algorithms, developers do not have a comprehensive guide to select an …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Most processors nowadays are multi-core processors to take advantage of parallel processing.
-Associated with parallel processing is the synchronization problem wherin locks are extensively
+Associated with parallel processing is the synchronization problem wherein locks are extensively
 used. This paper &lt;a class="citation-reference" href="#guerraoui2019" id="id1"&gt;[GUERRAOUI2019]&lt;/a&gt; argues that despite the large amount of available choices for
 lock algorithms, developers do not have a comprehensive guide to select an algorithm. The paper also
 asserts that most research on lock algorithms are limited to mutex locks and rarely consider other
